@@ -1,0 +1,53 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.googleGmsGoogleServices)
+}
+
+android {
+    namespace 'com.pregrad.aprilandroid'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.pregrad.aprilandroid"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.firebase.auth
+    implementation libs.annotation
+    implementation libs.lifecycle.livedata.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.circleimageview
+    implementation libs.glide
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.storage)
+    implementation libs.firebase.database
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

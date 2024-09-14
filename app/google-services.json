@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "960897217982",
+    "firebase_url": "https://androidaprilbatch2024-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "androidaprilbatch2024",
+    "storage_bucket": "androidaprilbatch2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960897217982:android:12d2fa1ddd5c97b00935ef",
+        "android_client_info": {
+          "package_name": "com.pregrad.aprilandroid"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN3g1nsGd-iClWWSYDXcgX02cjIjDYq7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
